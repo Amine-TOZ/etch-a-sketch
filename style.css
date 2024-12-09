@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.childDiv {
+width: 10px;
+height: 10px;
+border: 0px;
+background-color: red;
+}
+
+#container {
+    display: flex;
+    border:0px;
+    flex-wrap: wrap;
+    width: 160px;
+    height: 160px;
+    
+}
+
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center ;
+    border: solid green;
+    
+}
