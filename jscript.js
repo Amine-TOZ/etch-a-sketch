@@ -6,8 +6,16 @@ let container = document.getElementById("container");
 }
 
 container.addEventListener("mouseover",(event)=>{
-   event.target.style.backgroundColor="black";
-
+    const r = Math.floor(Math.random()*256);
+    const g = Math.floor(Math.random()*256);
+    const b = Math.floor(Math.random()*256);
+    event.target.style.backgroundColor="rgb("+ r + "," + g + "," + b + ")";
+    
+    const style = window.getComputedStyle(event.target);
+    const opacity = style.opacity;
+    if(+opacity < 1){
+    event.target.style.opacity = `${+opacity+0.1}`
+    }      
 })
 
 let button = document.getElementsByTagName("button")
